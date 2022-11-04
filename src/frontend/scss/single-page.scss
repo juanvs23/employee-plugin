@@ -1,0 +1,255 @@
+img.header-image {
+	width: 100%;
+	min-height: 350px;
+	object-fit: cover;
+	max-height: 576px;
+	@media (max-width: 767px) {
+		min-height: 80vh;
+	}
+}
+section.offer-content {
+	.text-description {
+		text-align: justify;
+	}
+	max-width: 1300px;
+	margin: auto;
+	background: #f6f6f6;
+	position: relative;
+	top: -8px;
+	overflow: hidden;
+	transition: 0.5s;
+	padding: 7%;
+	.offer-information {
+		width: 0;
+		float: left;
+		overflow: hidden;
+		/* &.active {
+			width: 100%;
+		} */
+	}
+	.offer-submit {
+		width: 0%;
+
+		overflow: hidden;
+		float: left;
+		&.active {
+			width: 100%;
+		}
+	}
+}
+section.similars-offers {
+	max-width: 1300px;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding: 0 6%;
+}
+.text-description {
+	margin-bottom: 25px;
+	font-size: 22px;
+	@media (max-width: 767px) {
+		font-size: 18px;
+	}
+}
+h2.offer-subtitle {
+	font-size: 42px;
+	font-weight: 700;
+	margin: 0;
+	margin-bottom: 20px;
+	@media (max-width: 767px) {
+		font-size: 30px;
+	}
+}
+button.activer-offert {
+	background: #03dddd;
+	font-size: 20px;
+	color: #15255a;
+	font-weight: 900;
+	transition: 0.3s;
+	&.disabled {
+		cursor: not-allowed;
+		background: #03dddd !important;
+		color: #15255a !important;
+		opacity: 0.5;
+	}
+	@media (max-width: 991px) {
+		font-size: 16px;
+	}
+	&:hover {
+		background: transparent;
+		border-color: #03dddd;
+		color: #03dddd;
+	}
+}
+header.header-vacante {
+	.button-area {
+	}
+	position: relative;
+	.header-wrpper {
+		max-width: 1100px;
+		margin: auto;
+		padding: 0 15px;
+		display: grid;
+		grid-template-columns: 71% auto;
+		gap: 20px;
+		align-items: flex-end;
+		@media (max-width: 767px) {
+			grid-template-columns: 100%;
+			gap: 20px;
+		}
+	}
+	.info-meta {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	h1.offer-title {
+		font-size: 42px;
+		color: #03dddd;
+		margin: 0;
+		font-weight: 900;
+		font-family: 'Raleway', sans-serif;
+		margin-bottom: 25px;
+		@media (max-width: 767px) {
+			font-size: 38px;
+		}
+	}
+
+	.meta-components {
+		display: flex;
+		gap: 15px;
+		padding-bottom: 15px;
+		font-size: 18px;
+		min-width: 24%;
+		padding-right: 15px;
+		&.Expired-data {
+			min-width: 100%;
+			padding-bottom: 0;
+			padding-right: 0;
+			@media (max-width: 767px) {
+				font-size: 13px;
+			}
+		}
+		@media (min-width: 768px) and (max-width: 991px) {
+			padding-bottom: 15px;
+			font-size: 15px;
+
+			padding-right: 15px;
+		}
+		@media (max-width: 767px) {
+			font-size: 16px;
+			min-width: 45%;
+		}
+
+		.meta-icon {
+			i {
+				font-size: 1.4rem;
+				color: white;
+			}
+		}
+		.meta-info {
+			color: white;
+			display: flex;
+			flex-wrap: wrap;
+			ul {
+				padding-inline-start: 0px;
+				li {
+					list-style-type: none;
+					a {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+	.header-content {
+		position: absolute;
+		z-index: 2;
+		bottom: 36px;
+		width: 100%;
+		left: 0;
+	}
+}
+ul.requirement-list {
+	padding: 0;
+}
+li.requirement-item {
+	list-style-type: none;
+	&:before {
+		content: '- ';
+		display: inline-block;
+		font-size: 2rem;
+	}
+}
+div#offer-list {
+	overflow: hidden;
+}
+.thinkus-item-wrapper {
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px #00000029;
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	margin: 10px;
+	article.thinkus-item-container {
+		min-width: 100%;
+		h3.thinkus-title {
+			color: #05dddd;
+			font-weight: 600;
+			font-size: 26px;
+		}
+		.thinkus-excerpt {
+			margin: 10px 0;
+			font-size: 18px;
+			color: #00205b;
+		}
+		.skills-list,
+		.ubication-list {
+			span.skill-item {
+				a {
+					font-size: 18px;
+					font-weight: 600;
+					color: #00205b;
+					transition: 0.3s;
+				}
+				&:hover {
+					a {
+						color: #03dddd;
+					}
+				}
+			}
+			span.city-item {
+				a {
+					font-size: 18px;
+					font-weight: 600;
+					color: #af14aa;
+					transition: 0.3s;
+				}
+				&:hover {
+					a {
+						color: #03dddd;
+					}
+				}
+			}
+		}
+	}
+}
+h2.postation-title {
+	font-weight: bold;
+	font-size: 38px;
+	color: #15255a;
+}
+p.postulation-text {
+	font-size: 22px;
+	color: #15255a;
+	@media (max-width: 767px) {
+		font-size: 18px;
+	}
+}
+.postulation-header {
+	margin-bottom: 50px;
+	@media (max-width: 767px) {
+		margin-bottom: 35px;
+	}
+}

@@ -1,0 +1,14 @@
+div#reactMetabox .form-check.form-switch {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-switch .form-check-input {
+	background-repeat: no-repeat;
+	height: 2rem;
+	width: 5rem;
+	margin-top: 10px;
+	&:checked::before {
+		display: none;
+	}
+}

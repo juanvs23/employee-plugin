@@ -1,0 +1,104 @@
+table#thinkus-newinfo {
+	.select2-container {
+		width: 100% !important;
+		height: auto !important;
+		max-width: 450px;
+		max-height: initial !important;
+		border: 1px solid;
+		border-radius: 5px;
+		background: white;
+	}
+	.select2-container--default.select2-container--focus
+		.select2-selection--multiple {
+		border: none;
+		outline: 0;
+		background: no-repeat;
+	}
+	.postulation-input-content.resume_file {
+		display: flex;
+		gap: 10px;
+		align-items: flex-start;
+		div#mwp-dropform-wrapper {
+			display: inline-block;
+			min-width: 400px;
+			.dz-preview.dz-file-preview {
+				width: 100% !important;
+				.dz-progress {
+					width: 150px;
+				}
+				.dz-image {
+					display: none;
+				}
+				.dz-details {
+				}
+				.dz-error-mark {
+					svg {
+						fill: red;
+					}
+				}
+				.dz-error-message span {
+					font-size: 1rem;
+				}
+				.dz-success-mark {
+					svg {
+						fill: green;
+					}
+				}
+				.dz-error-mark,
+				.dz-success-mark {
+					position: absolute;
+
+					left: 30px;
+					top: -12px;
+					width: 34px;
+					height: 35px;
+					left: 26%;
+					margin-left: -27px;
+					svg {
+						height: 34px;
+						width: 34px;
+					}
+				}
+			}
+			div#dropzone-file .dz-default.dz-message {
+				width: 100%;
+				border: none;
+				border-radius: 10px;
+				display: flex;
+				justify-content: flex-start;
+
+				button.dz-button {
+					border: none;
+					padding: 5px 30px;
+					font-size: 22px;
+					color: #737476;
+					font-weight: 400;
+					background: transparent;
+					color: #2271b1;
+					border-color: #2271b1;
+					background: #f6f7f7;
+					vertical-align: top;
+					display: inline-block;
+					text-decoration: none;
+					font-size: 13px;
+					line-height: 2.15384615;
+					min-height: 30px;
+					margin: 0;
+					padding: 0 10px;
+					cursor: pointer;
+					border-width: 1px;
+					border-style: solid;
+					-webkit-appearance: none;
+					border-radius: 3px;
+					white-space: nowrap;
+					box-sizing: border-box;
+					&:hover {
+						background: #f0f0f1;
+						border-color: #0a4b78;
+						color: #0a4b78;
+					}
+				}
+			}
+		}
+	}
+}

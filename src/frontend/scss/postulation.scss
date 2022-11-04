@@ -1,0 +1,158 @@
+.form-row {
+	display: grid;
+	width: 100%;
+	justify-content: space-between;
+	align-items: baseline;
+	font-size: 22px;
+	grid-template-columns: 35% 64%;
+	gap: 1%;
+	margin-bottom: 25px;
+	@media (max-width: 767px) {
+		grid-template-columns: 100%;
+		font-size: 18px;
+	}
+	label {
+		display: flex;
+		min-height: 42px;
+		align-items: center;
+		flex-wrap: wrap;
+		padding-bottom: 5px;
+		.addtional-info {
+			font-size: 16px;
+			color: #737476;
+			display: block;
+			width: 100%;
+			min-width: 100%;
+		}
+		span.required {
+			color: #c31cb5;
+		}
+	}
+	.postulation-input {
+		width: 100%;
+		display: block;
+		border-color: #00205b;
+		min-height: 42px;
+		border-radius: 10px;
+		background-color: transparent;
+		&:focus-visible {
+			border-color: #00205b;
+		}
+	}
+
+	p.info-alert {
+		margin-bottom: 0;
+		font-size: 0.7em;
+		font-weight: 700;
+		color: #c36;
+		opacity: 0;
+		display: none;
+		transition: 0.7s;
+		&.show {
+			display: block;
+			opacity: 1;
+		}
+	}
+}
+.aceptance-row {
+	input#acceptance {
+		font-size: 20px;
+		width: 20px;
+		height: 20px;
+	}
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 22px;
+	@media (max-width: 767px) {
+		font-size: 18px;
+	}
+	a {
+		color: #00b9ff;
+	}
+}
+button#send-offer {
+	border-color: #c31cb5;
+	color: white;
+	background: #c31cb5;
+	transition: 0.5s;
+	&:hover {
+		background: white;
+		color: #c31cb5;
+	}
+	@media (min-width: 768px) {
+		max-width: 250px;
+	}
+}
+.postulation-input-content div#mwp-dropform-wrapper {
+	.dz-preview.dz-file-preview {
+		width: 100% !important;
+		.dz-progress {
+			width: 150px;
+		}
+		.dz-image {
+			display: none;
+		}
+		.dz-details {
+			font-size: 0.9rem;
+			display: flex;
+			width: 70%;
+			position: absolute;
+			top: -43px;
+			overflow: hidden;
+			line-height: 1;
+		}
+		.dz-error-mark {
+			svg {
+				fill: red;
+			}
+		}
+		.dz-error-message span {
+			font-size: 1rem;
+		}
+		.dz-success-mark {
+			svg {
+				fill: green;
+			}
+		}
+		.dz-error-mark,
+		.dz-success-mark {
+			position: absolute;
+
+			left: 30px;
+			top: -12px;
+			width: 34px;
+			height: 35px;
+			left: 26%;
+			margin-left: -27px;
+			svg {
+				height: 34px;
+				width: 34px;
+			}
+		}
+	}
+	div#dropzone-file .dz-default.dz-message {
+		width: 100%;
+		border: 1px solid;
+		border-radius: 10px;
+		display: flex;
+		justify-content: flex-end;
+		border-color: #00205b !important;
+		button.dz-button {
+			border: none;
+			padding: 5px 30px;
+			font-size: 22px;
+			color: #737476;
+			font-weight: 400;
+			background: transparent;
+			&:focus,
+			&:focus-visible {
+				border: none;
+				outline: none;
+			}
+		}
+	}
+}
+.select2-container--default .select2-selection--multiple {
+	background: transparent !important;
+	border-color: #00205b !important;
+}
